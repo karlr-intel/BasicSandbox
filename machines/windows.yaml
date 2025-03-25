@@ -1,0 +1,8 @@
+name: Windows 10
+hostname: win10Professional
+os: windows
+flavor: widnows-medium
+cloud-init: |
+  #ps1_sysnative
+  net user student P@ssw0rd123 /add
+  net localgroup administrators student /add
