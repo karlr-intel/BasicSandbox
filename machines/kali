@@ -1,0 +1,14 @@
+name: Kali Linux
+hostname: kali
+os: linux
+flavor: csirtmu.tiny1x2
+cloud-init: |
+  #cloud-config
+  users:
+    - name: student
+      groups: sudo
+      shell: /bin/bash
+      lock_passwd: false
+      plain_text_passwd: "password123"
+  chpasswd:
+    expire: false
