@@ -1,0 +1,6 @@
+name: Network Intrusion
+version: 1.0
+description: |
+  A sandbox for network intrusion analysis with Security Onion, Kali, Linux Target, and Windows 10.
+author: Karl Rauschelbach
+topology_file: topology.yaml
