@@ -1,0 +1,15 @@
+name: Linux Target
+hostname: linux-target
+os: linux
+flavor: csirtmu.tiny1x2
+image: ubuntu-focal-x86_64
+cloud-init: |
+  #cloud-config
+  users:
+    - name: student
+      groups: sudo
+      shell: /bin/bash
+      lock_passwd: false
+      plain_text_passwd: "password123"
+  chpasswd:
+    expire: false
