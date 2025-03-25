@@ -1,0 +1,24 @@
+switches:
+  - id: main-switch
+
+machines:
+  - id: securityonion
+    type: vm
+    image: securityonion.qcow2
+    interfaces:
+      - switch: main-switch
+  - id: kali
+    type: vm
+    image: kali.qcow2
+    interfaces:
+      - switch: main-switch
+  - id: linux-target
+    type: vm
+    image: linux-target.qcow2
+    interfaces:
+      - switch: main-switch
+  - id: windows10
+    type: vm
+    image: windows10.qcow2
+    interfaces:
+      - switch: main-switch
