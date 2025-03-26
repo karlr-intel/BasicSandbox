@@ -1,4 +1,4 @@
 name: Security Onion
-hostname: securityonion
+hostname: SecurityOnion
 os: linux
 flavor: so-import-node
